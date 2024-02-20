@@ -10,10 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
-#variables
-
 NAME = libft.a
-
+CFLAGS = -Wall -Werror -Wextra
 SRCS = ft_isalpha.c \
 	ft_isdigit.c \
 	ft_isalnum.c \
@@ -47,17 +45,12 @@ SRCS = ft_isalpha.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 	
-
 OBJS = $(SRCS: .c=.o)
-
-CC = cc
-CFLAGS = -Wall -Werror -Wextra
-RM = rm -rf
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) main.c $(OBJS) -o $(NAME)
+	AR -rcs $(NAME) $(OBJS)
 
 clean:
 	$(RM) $(OBJS)
