@@ -6,7 +6,7 @@
 #    By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/19 18:05:30 by kvan-don          #+#    #+#              #
-#    Updated: 2024/02/20 00:23:27 by kvan-don         ###   ########.fr        #
+#    Updated: 2024/02/20 21:09:59 by kvan-don         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,7 @@ SRCS = ft_isalpha.c \
 	
 OBJS = $(SRCS: .c=.o)
 
-all: $(NAME)
+all: $(NAME) clean
 
 $(NAME): $(OBJS)
 	AR -rcs $(NAME) $(OBJS)
