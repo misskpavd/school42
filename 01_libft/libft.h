@@ -6,7 +6,7 @@
 /*   By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 17:02:26 by kvan-don          #+#    #+#             */
-/*   Updated: 2024/02/20 23:02:06 by kvan-don         ###   ########.fr       */
+/*   Updated: 2024/02/22 21:56:15 by kvan-don         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include <stdlib.h>
 # include <string.h>
 
+/* LIB TESTER REMOVE BEFORE SUBMIT */
+int	main(void);
+
 /* all prototypes */
 
 int	ft_isalpha(int c);
@@ -25,9 +28,11 @@ int	ft_isalnum(int c);
 int	ft_isascii(int c);
 int	ft_isprint(int c);
 size_t  ft_strlen(const char *s);
-/*	ft_memset.c \
-	ft_bzero.c \
-	ft_strlcpy.c \
+void	*ft_memset(void *b, int c, size_t len);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+/*	ft_strlcpy.c \
 	ft_strlcat.c \
 	ft_toupper.c \
 	ft_tolower.c \
@@ -38,8 +43,10 @@ size_t  ft_strlen(const char *s);
 	ft_memcmp.c \
 	ft_strnstr.c \
 	ft_atoi.c \
+------------------------------
 	ft_calloc.c \
 	ft_strdup.c \
+----------------------------------
 	ft_substr.c \
 	ft_strjoin.c \
 	ft_strtrim.c \
