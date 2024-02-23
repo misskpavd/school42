@@ -6,7 +6,7 @@
 /*   By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 17:02:26 by kvan-don          #+#    #+#             */
-/*   Updated: 2024/02/22 21:56:15 by kvan-don         ###   ########.fr       */
+/*   Updated: 2024/02/23 16:33:41 by kvan-don         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
-/*	ft_strlcpy.c \
-	ft_strlcat.c \
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+/*	ft_strlcat.c \
 	ft_toupper.c \
 	ft_tolower.c \
 	ft_strchr.c \

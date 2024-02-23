@@ -6,7 +6,7 @@
 #    By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/19 18:05:30 by kvan-don          #+#    #+#              #
-#    Updated: 2024/02/23 09:21:35 by kvan-don         ###   ########.fr        #
+#    Updated: 2024/02/23 16:07:58 by kvan-don         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,12 +17,12 @@ SRCS = ft_isalpha.c \
 	ft_isalnum.c \
 	ft_isascii.c \
 	ft_isprint.c \
-#	ft_strlen.c \
-#	ft_memset.c \
-#	ft_bzero.c \
-#	ft_memcpy.c \
-#       ft_memmove.c \
-#	ft_strlcpy.c \
+	ft_strlen.c \
+	ft_memset.c \
+	ft_bzero.c \
+	ft_memcpy.c \
+	ft_memmove.c \
+	ft_strlcpy.c \
 #	ft_strlcat.c \
 #	ft_toupper.c \
 #	ft_tolower.c \

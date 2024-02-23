@@ -6,7 +6,7 @@
 /*   By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 19:57:56 by kvan-don          #+#    #+#             */
-/*   Updated: 2024/02/23 09:22:04 by kvan-don         ###   ########.fr       */
+/*   Updated: 2024/02/23 13:50:36 by kvan-don         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ non-zero if the character tests true.*/
 
 #include "libft.h"
 
-int		ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);

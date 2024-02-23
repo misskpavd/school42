@@ -6,7 +6,7 @@
 /*   By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 11:37:09 by kvan-don          #+#    #+#             */
-/*   Updated: 2024/02/21 16:17:50 by kvan-don         ###   ########.fr       */
+/*   Updated: 2024/02/23 14:18:35 by kvan-don         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ But remember the return value, we have to return the first parameter of the
 function, the void *b string. */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -31,20 +30,4 @@ void	*ft_memset(void *b, int c, size_t len)
 		len--;
 	}
 	return (b);
-}
-
-int main() {
-    char buffer[10];
-
-    // Initialize buffer with 'A's
-    ft_memset(buffer, 'A', sizeof(buffer) - 1);  // Leave space for null terminator
-    buffer[sizeof(buffer) - 1] = '\0';  // Null-terminate the string
-
-    printf("Buffer after memset: %s\n", buffer);
-
-    // Change buffer contents using ft_memset
-    ft_memset(buffer, 'B', 5);  // Change first 5 characters to 'B's
-    printf("Buffer after changing first 5 characters: %s\n", buffer);
-
-    return 0;
 }

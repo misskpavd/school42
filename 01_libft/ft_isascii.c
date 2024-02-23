@@ -6,10 +6,9 @@
 /*   By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 21:44:48 by kvan-don          #+#    #+#             */
-/*   Updated: 2024/02/23 09:23:51 by kvan-don         ###   ########.fr       */
+/*   Updated: 2024/02/23 13:52:22 by kvan-don         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 /* The isascii() function is used to check whether a given character, passed to
 the function as an integer argument, fits into the ASCII character set.
