@@ -6,7 +6,7 @@
 #    By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/19 18:05:30 by kvan-don          #+#    #+#              #
-#    Updated: 2024/03/01 11:56:42 by kvan-don         ###   ########.fr        #
+#    Updated: 2024/03/01 18:31:00 by kvan-don         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ SRCS = ft_isalpha.c \
 	ft_strjoin.c \
 	ft_strtrim.c \
 	ft_split.c \
-#	ft_itoa.c \
+	ft_itoa.c \
 #	ft_strmapi.c \
 #	ft_striteri.c \
 #	ft_putchar_fd.c \

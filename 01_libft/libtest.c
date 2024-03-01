@@ -6,7 +6,7 @@
 /*   By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 21:50:21 by kvan-don          #+#    #+#             */
-/*   Updated: 2024/03/01 11:54:46 by kvan-don         ###   ########.fr       */
+/*   Updated: 2024/03/01 18:23:37 by kvan-don         ###   ########.fr       */
 /*	                                                                          */
 /* ************************************************************************** */
 
@@ -335,8 +335,8 @@ int	main(void)
 	free(resultstrjoin);
 	printf("----------------\n\n");
 
-        printf("----------------\n");
-        printf("\033[1m\033[31mTest ft_strtrim\033[0m\n");
+    printf("----------------\n");
+    printf("\033[1m\033[31mTest ft_strtrim\033[0m\n");
 	char const *teststrtrim1 = "   Hello, World!   ";
 	char const *setstrtrim1 = " ";
 	char *resultstrtrim1 = ft_strtrim(teststrtrim1, setstrtrim1);
@@ -364,6 +364,27 @@ int	main(void)
 	free(resultstrtrim5);
 	printf("----------------\n\n");
 
-        printf("----------------\n");
-        printf("\033[1m\033[31mTest ft_split\033[0m\n");
+    printf("----------------\n");
+    printf("\033[1m\033[31mTest ft_split\033[0m\n");
+    const char *testStrSplit = "Hello, world! This is a test.";
+    char delimiterSplit = ' ';
+    char **substringsSplit;
+    substringsSplit = ft_split(testStrSplit, delimiterSplit);
+    if (substringsSplit == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+    for (int i = 0; substringsSplit[i] != NULL; i++) {
+        printf("Substring %d: %s\n", i, substringsSplit[i]);
+    }
+    for (int i = 0; substringsSplit[i] != NULL; i++) {
+        free(substringsSplit[i]);
+    }
+    free(substringsSplit);
+	printf("----------------\n\n");
+
+	printf("----------------\n");
+	printf("\033[1m\033[31mTest ft_split\033[0m\n");
+
+
 }
