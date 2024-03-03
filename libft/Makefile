@@ -6,7 +6,7 @@
 #    By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/19 18:05:30 by kvan-don          #+#    #+#              #
-#    Updated: 2024/03/03 19:12:13 by kvan-don         ###   ########.fr        #
+#    Updated: 2024/03/03 21:00:25 by kvan-don         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,7 @@ test: bonus
 	cc -o test_bonuslibft lib_bonustest.c libft.a
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
