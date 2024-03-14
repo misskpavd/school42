@@ -6,7 +6,7 @@
 /*   By: kvan-don <kvan-don@student.42luxembourg.l  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 11:02:56 by kvan-don          #+#    #+#             */
-/*   Updated: 2024/03/14 11:38:05 by kvan-don         ###   ########.fr       */
+/*   Updated: 2024/03/14 14:58:09 by kvan-don         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ void	ft_format(va_list var, char *str, size_t count)
 	else if (*str == 'u')
 		ft_putuint_pf(va_arg(var, unsigned int) count);
 	else if (*str == 'x')
-		ft_puthex_pf(va_arg(var, unsigned int) count, LOW_CASE_HEX);
+		ft_puthex_pf(va_arg(var, unsigned int) count, x);
 	else if (*str == 'X')
-		ft_puthex_pf(va_arg(var, unsigned int) count, UP_CASE_HEX);
+		ft_puthex_pf(va_arg(var, unsigned int) count, X);
 	else if (*str == '%')
 		ft_putchar_pf(*str, count);
 }
