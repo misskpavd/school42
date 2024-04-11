@@ -1,6 +1,0 @@
-https://github.com/xicodomingues/francinette
-
-
-bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"
-
-
